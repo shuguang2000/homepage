@@ -10,4 +10,5 @@
 
 # 排除上传脚本文件
 /deploy.sh
+/package-lock.json
 node_modules/
