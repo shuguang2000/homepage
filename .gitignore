@@ -8,5 +8,4 @@
 !.github
 
 # 排除上传脚本文件
-*.sh
 node_modules/
