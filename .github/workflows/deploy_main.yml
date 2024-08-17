@@ -33,12 +33,15 @@ jobs:
         with:
           # 选择要使用的 node 版本
           node-version: 20
-          # 缓存 npm 依赖
-          cache: npm
 
-      - name: 安装依赖
-        run: 
-          npm ci
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192

@@ -8,5 +8,6 @@
 !.github
 
 # 排除上传脚本文件
-
+*.sh
+/package-lock.json
 node_modules/
