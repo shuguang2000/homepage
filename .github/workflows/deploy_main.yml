@@ -38,9 +38,7 @@ jobs:
 
       - name: 安装依赖
         run: 
-          npm ci
-          npm i -D @vuepress/bundler-vite@next
-          npm i -D @vuepress/theme-default@next
+          npm ci && npm i -D @vuepress/bundler-vite@next && npm i -D @vuepress/theme-default@next
 
       - name: 构建文档
         env:
