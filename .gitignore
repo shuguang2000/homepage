@@ -1,0 +1,14 @@
+# 排除所有.开头的隐藏文件:
+.*
+
+# 保留.gitignore文件
+!.gitignore
+
+# 保留配置Git Action的yml文件，从而让github创建自定义工作流
+!.github
+
+# 排除上传脚本文件
+*.sh
+
+node_modules/
+/package-lock.json
