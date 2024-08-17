@@ -9,13 +9,13 @@
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs",
     "docs:update-package": "npx vp-update",
-    "deploy":"bash deploy.sh"
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.7",
+    "@vuepress/bundler-vite": "^2.0.0-rc.15",
+    "@vuepress/plugin-blog": "^2.0.0-rc.11",
     "@vuepress/theme-default": "^2.0.0-rc.11",
     "vue": "^3.4.0",
-    "vuepress": "^2.0.0-rc.7",
-    "@vuepress/plugin-blog": "^2.0.0-rc.11"
+    "vuepress": "^2.0.0-rc.7"
   }
 }
