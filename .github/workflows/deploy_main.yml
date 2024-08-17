@@ -42,6 +42,9 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
 
+      - name: 安装依赖
+        run: npm ci
+
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
