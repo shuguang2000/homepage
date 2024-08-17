@@ -38,8 +38,7 @@ jobs:
 
       - name: 安装依赖
         run: 
-          npm ci && npm i -D @vuepress/bundler-vite@next && npm i -D @vuepress/theme-default@next
-
+          npm ci
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
