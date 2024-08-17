@@ -34,14 +34,6 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 20
 
-      - name: Cache NPM dependencies
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-
       - name: 安装依赖
         run: npm ci
 
