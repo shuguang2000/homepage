@@ -60,4 +60,3 @@ jobs:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
         # env:
         #   # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
