@@ -57,6 +57,10 @@ jobs:
           branch: gh-pages
           folder: docs/.vuepress/dist
           # ssh-keygen -t rsa -m pem -b 4096 -C "bestwishestomiku@outlook.com" -N ""
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          # @see https://github.com/JamesIves/github-pages-deploy-action/tree/dev?tab=readme-ov-file#using-an-ssh-deploy-key-
+          ssh-key: true
+          # ssh-key: ${{ secrets.DEPLOY_KEY }}
         # env:
         #   # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+        # Warning: The process '/usr/bin/git' failed with exit code 128
+        # 需创建用于命令行的个人访问令牌
