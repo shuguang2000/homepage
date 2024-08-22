@@ -14,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  id-token: write
 
 jobs:
   deploy-gh-pages:
@@ -39,8 +38,7 @@ jobs:
       # 直接使用 npm ci不会写入 package.json 或任何包锁
       # @see https://nodejs.cn/npm/cli/v9/commands/npm-ci/
         # run: npm ci --legacy-peer-deps
-        # run: npm config set legacy-peer-deps=true --location=project && npm ci
-        run: npm install
+        run: npm config set legacy-peer-deps=true --location=project && npm ci
 
       - name: 构建文档
         env:
