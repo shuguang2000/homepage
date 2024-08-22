@@ -58,7 +58,8 @@ jobs:
           folder: docs/.vuepress/dist
           # ssh-keygen -t rsa -m pem -b 4096 -C "bestwishestomiku@outlook.com" -N ""
           # @see https://github.com/JamesIves/github-pages-deploy-action/tree/dev?tab=readme-ov-file#using-an-ssh-deploy-key-
-          ssh-key: true
+          # 使用Git客户端的SSH key部署
+            ssh-key: true
           # ssh-key: 
         # env:
         #   # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
