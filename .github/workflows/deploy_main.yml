@@ -59,7 +59,7 @@ jobs:
           # ssh-keygen -t rsa -m pem -b 4096 -C "bestwishestomiku@outlook.com" -N ""
           # @see https://github.com/JamesIves/github-pages-deploy-action/tree/dev?tab=readme-ov-file#using-an-ssh-deploy-key-
           ssh-key: true
-          # ssh-key: ${{ secrets.DEPLOY_KEY }}
+          # ssh-key: 
         # env:
         #   # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
         # Warning: The process '/usr/bin/git' failed with exit code 128
