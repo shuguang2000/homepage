@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
+# 使用须知需提前：
+# 1.在本地创建好gh-pages分支添加完内容再将gh-pages分支推送到远程
+# git checkout -b gh-pages
+# git push -u homepage gh-pages
+
+
 
 # 确保脚本抛出遇到的错误
 set -e

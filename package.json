@@ -9,7 +9,8 @@
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs",
     "docs:update-package": "npx vp-update",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "deploy_pages": "bash deploy_pages.sh"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.15",
